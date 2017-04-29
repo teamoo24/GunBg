@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\AndroidStudioProjects\GunBg\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\USER\AndroidStudioProjects\GunBg\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b60e30ea6661115f50ca9d08890781db275ec655\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\AndroidStudioProjects\GunBg\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="54f321c3be3c5b5f9c705b4e075fa1f7a656f170">
+        <dex dex="C:\Users\USER\AndroidStudioProjects\GunBg\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b42b180de371be71348b37a19a692d1c2128a600\classes.dex" />
+    </item>
+
+</items>

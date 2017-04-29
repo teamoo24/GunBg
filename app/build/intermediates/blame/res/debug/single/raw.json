@@ -1,0 +1,358 @@
+[
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_meat.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_meat.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\coinn.wav",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\coinn.wav"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_cleanall.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_cleanall.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_guage2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_guage2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_hoshi2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_hoshi2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster030201.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster030201.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_hungry.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_hungry.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_information2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_information2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_po2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_po2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_test.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_test.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_red1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_red1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_tem2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_tem2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster030101.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster030101.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster030301.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster030301.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster030302.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster030302.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_minetext.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_minetext.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\menu.mp3",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\menu.mp3"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_hoshi1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_hoshi1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster030102.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster030102.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster030202.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster030202.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\space.mp3",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\space.mp3"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_red2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_red2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_state.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_state.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_red5.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_red5.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster040101.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster040101.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_life2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_life2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster020102.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster020102.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\shop.mp3",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\shop.mp3"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster040301.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster040301.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster020302.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster020302.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_medichine.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_medichine.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_ddong.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_ddong.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_off.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_off.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_space.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_space.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_po3.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_po3.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_number.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_number.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_numbers.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_numbers.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_coin.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_coin.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_effect3.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_effect3.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_information3.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_information3.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_menu1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_menu1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_mine.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_mine.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster010201.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster010201.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_option.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_option.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_eee1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_eee1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_money.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_money.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_store.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_store.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_pocket2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_pocket2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster040202.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster040202.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_life1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_life1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster010202.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster010202.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\hunt.mp3",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\hunt.mp3"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster040302.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster040302.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster040102.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster040102.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_red3.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_red3.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_logo.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster010302.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster010302.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_hurt.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_hurt.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster010102.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster010102.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\attack.wav",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\attack.wav"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_on.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_on.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster020301.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster020301.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_pocket3.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_pocket3.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_shop.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_shop.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_effect2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_effect2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster020101.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster020101.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster020201.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster020201.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\collision.wav",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\collision.wav"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_menu2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_menu2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_information1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_information1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster010101.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster010101.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_po1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_po1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_effect.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_effect.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster020202.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster020202.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_dirty.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_dirty.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster040201.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster040201.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_bb.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_bb.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_pocket1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_pocket1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_tem1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_tem1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_po4.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_po4.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_back.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_back.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_aa.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_aa.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_gal.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_gal.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_guage1.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_guage1.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_red4.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_red4.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_pocket4.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_pocket4.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_monster010301.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_monster010301.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_eee2.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_eee2.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\res\\merged\\debug\\raw\\_gold.png",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\src\\main\\res\\raw\\_gold.png"
+    }
+]
