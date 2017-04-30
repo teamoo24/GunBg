@@ -98,24 +98,24 @@ public class InitAll {
 		MyGameView.m_instance.sample2 = new Monster2(context);
 		MyGameView.m_instance.sample3 = new Monster3(context);
 		MyGameView.m_instance.sample4 = new Monster4(context);
-		for (int i = 0; i < 9; i++) {
-			MyGameView.m_instance.mon1[i] = new Monster1(context);
-			MyGameView.m_instance.mon1[i].isMenu = false;
-			MyGameView.m_instance.mon1[i].itLive = false;
-			MyGameView.m_instance.mon1[i].State = 0;
-			MyGameView.m_instance.mon2[i] = new Monster2(context);
-			MyGameView.m_instance.mon2[i].isMenu = false;
-			MyGameView.m_instance.mon2[i].itLive = false;
-			MyGameView.m_instance.mon2[i].State = 0;
-			MyGameView.m_instance.mon3[i] = new Monster3(context);
-			MyGameView.m_instance.mon3[i].isMenu = false;
-			MyGameView.m_instance.mon3[i].itLive = false;
-			MyGameView.m_instance.mon3[i].State = 0;
-			MyGameView.m_instance.mon4[i] = new Monster4(context);
-			MyGameView.m_instance.mon4[i].isMenu = false;
-			MyGameView.m_instance.mon4[i].itLive = false;
-			MyGameView.m_instance.mon4[i].State = 0;
-		}
+//		for (int i = 0; i < 9; i++) {
+//			MyGameView.m_instance.mon1[i] = new Monster1(context);
+//			MyGameView.m_instance.mon1[i].isMenu = false;
+//			MyGameView.m_instance.mon1[i].itLive = false;
+//			MyGameView.m_instance.mon1[i].State = 0;
+//			MyGameView.m_instance.mon2[i] = new Monster2(context);
+//			MyGameView.m_instance.mon2[i].isMenu = false;
+//			MyGameView.m_instance.mon2[i].itLive = false;
+//			MyGameView.m_instance.mon2[i].State = 0;
+//			MyGameView.m_instance.mon3[i] = new Monster3(context);
+//			MyGameView.m_instance.mon3[i].isMenu = false;
+//			MyGameView.m_instance.mon3[i].itLive = false;
+//			MyGameView.m_instance.mon3[i].State = 0;
+//			MyGameView.m_instance.mon4[i] = new Monster4(context);
+//			MyGameView.m_instance.mon4[i].isMenu = false;
+//			MyGameView.m_instance.mon4[i].itLive = false;
+//			MyGameView.m_instance.mon4[i].State = 0;
+//		}
 		MyGameView.m_instance.hmenustate = false;
 		// ���� �迭�� �ʱ�ȭ ���ִ� �Լ�
 		// ĳ������ ���� y��ġ
