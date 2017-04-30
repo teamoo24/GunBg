@@ -5,15 +5,18 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.Random;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.Log;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
@@ -21,16 +24,16 @@ import android.view.SurfaceView;
 
 public class MyGameView extends SurfaceView implements Callback {
 	public static MyGameView m_instance;
-	GameThread mThread; // ������Ŭ����
+	GameThread mThread; // ゲームのスレッド宣言
 	SurfaceHolder mHolder;
 	Context mContext;
-	ArrayList<Enemy> mEnemy = new ArrayList<Enemy>(); // �̴ϰ��ӿ� ������ ���� �迭����Ʈ
+	ArrayList<Enemy> mEnemy = new ArrayList<Enemy>(); // 敵の配列宣言
 	ArrayList<Gold> mGold = new ArrayList<Gold>();
-	SoundPool sound; // ����
+	SoundPool sound; // SoundPool宣言
 	int sounds[] = new int[3];
 	long k;
-	int logo_alpha = 0; // �ΰ� ����
-	int logo_alpha2 = 255; // �ΰ� ����
+	int logo_alpha = 0; // ロゴ表示用のalpha宣言
+	int logo_alpha2 = 255; // ロゴ表示用のalpha宣言
 	boolean logo_alpha_ok = false;
 	boolean logo_alpha2_ok = false;
 	int alpha = 2;
@@ -58,13 +61,9 @@ public class MyGameView extends SurfaceView implements Callback {
 	int nowword = 0; // ���ڻѷ��ٶ� �ѱ��ھ� üũ
 	int nowline = 0; // ��¥�ѷ��ٶ� ���پ� üũ
 	boolean menucheck = false;
-	int poketX, poketY;
-	// ���ϸ��� Ŭ�������� �� ��ǥ�� �������ش�.
-	boolean hmenustate;
-	// �޴��� �����ִ°��� üũ�Ҷ� ���
-
-	boolean isOK;
-	// ���� ������ �����Ҷ� ���
+	int poketX, poketY;// ���ϸ��� Ŭ�������� �� ��ǥ�� �������ش�.
+	boolean hmenustate;// �޴��� �����ִ°��� üũ�Ҷ� ���
+	boolean isOK;// ���� ������ �����Ҷ� ���
 	int meat2[] = new int[2];
 	int medichine2[] = new int[2];
 	int ddong2[] = new int[2];
@@ -74,6 +73,7 @@ public class MyGameView extends SurfaceView implements Callback {
 	int height = 800;
 	int div;
 	int remaintime=100000;
+
 	mine mi = new mine();
 	Monster1 sample1;
 	Monster2 sample2;
@@ -82,6 +82,7 @@ public class MyGameView extends SurfaceView implements Callback {
 	Bitmap Gauge[] = new Bitmap[2];
 	Bitmap jouhou[] = new Bitmap[6];
 	Bitmap tem[] = new Bitmap[3];
+	Point point = new Point();
 
 	kanri kr = new kanri();
 	menudown md = new menudown();
@@ -90,11 +91,11 @@ public class MyGameView extends SurfaceView implements Callback {
 	 * State ������ ���� 1 : �������� 2 : 1�� ���� 3 : 2�� ���� 4 : 3������ 5 : ������
 	 */
 	int farmlevel;
-	// ���� ���� ��������
+	// 農場のレベル
 	int meat;
-	// �����Ǽ�
+	// 食料のレベル
 	int medichine;
-	// ���Ǽ�
+	// 薬のレベル
 	int ddong;
 	boolean up;
 	int n;
@@ -105,26 +106,29 @@ public class MyGameView extends SurfaceView implements Callback {
 	Monster2[] mon2 = new Monster2[10];
 	Monster3[] mon3 = new Monster3[10];
 	Monster4[] mon4 = new Monster4[10];
+
+	boolean logoloaded = false;
+
 	boolean check = true;
 	boolean threadcheck;
 	boolean canRun = true;
 	boolean isWait = false;
 	boolean s_on = true;
 	boolean v_on = true;
-	// ġ����ִ¼�
+	//カレンダーやdateの変数宣言
 	GregorianCalendar calender;
 	SimpleDateFormat dateFormat;
 	String dateTime;
-	// ���ں�Ʈ��
+	//飼育キャラクター宣言
 	Bitmap Backside[] = new Bitmap[2];
 	newPocketmon1 np1 = new newPocketmon1();
 	newPocketmon2 np2 = new newPocketmon2();
 	newPocketmon3 np3 = new newPocketmon3();
 	newPocketmon4 np4 = new newPocketmon4();
 	Bitmap po[] = new Bitmap[4];
-	// ĳ������ ��Ʈ�� �̹���
+	//メニューの宣言
 	Bitmap Menu;
-	// �޴� ��Ʈ��
+	//モンスターの状態や各種UI宣言
 	Bitmap think[] = new Bitmap[3];
 	Bitmap mine;
 	Bitmap store;
@@ -145,8 +149,11 @@ public class MyGameView extends SurfaceView implements Callback {
 	Bitmap option_off;
 	Bitmap option;
 	Bitmap space;
-	//Bitmap hoshi[] = new Bitmap[2];
+	Bitmap hoshi[] = new Bitmap[2];
+
+	//initクラスたちの宣言
 	InitAll init = new InitAll();
+	logoinit linit = new logoinit();
 	ControlPet cr = new ControlPet();
 	int dx1, dy1;
 	// down�������� ��ǥ
@@ -162,9 +169,10 @@ public class MyGameView extends SurfaceView implements Callback {
 	String gametext = "�������� �������� �ذ��� óġ�Ͽ� Gold�� ȹ�� �ؾ��Ѵ�!!";
 	int imsi = 100;
 	int line = 15;
+	int realwidth,realheight;
 	String text[] = new String[(gametext.length() / line) + 1];
 
-	public MyGameView(Context context) {
+	public MyGameView(Context context,int Width, int Height) {
 		super(context);
 		m_instance = this;
 		SurfaceHolder holder = getHolder();
@@ -174,6 +182,9 @@ public class MyGameView extends SurfaceView implements Callback {
 		mContext = context;
 		mThread = new GameThread(holder, context);
 
+
+		realwidth = Width;
+		realheight = Height;
 		for (int i = 0; i < text.length; i++) {
 			text[i] = "";
 		}
@@ -202,113 +213,59 @@ public class MyGameView extends SurfaceView implements Callback {
 	ddong = sqlite.get_ddong;
 	for(int i=0;i<9;i++)
 	{
-		Log.i("get_mon1_shurui",""+sqlite.get_mon1_shurui);
 		mon1[i].shurui = sqlite.get_mon1_shurui;
-		
-		Log.i("get_mon1_level",""+sqlite.get_mon1_level);
 		mon1[i].Level = sqlite.get_mon1_level;
-		
-		Log.i("get_mon1_state",""+sqlite.get_mon1_state);
 		mon1[i].State = sqlite.get_mon1_state;
-		
-		Log.i("get_mon1_live",""+sqlite.get_mon1_live);
 		mon1[i].tfcheck = sqlite.get_mon1_live[i];
-		
-		Log.i("get_mon1_leveltime",""+sqlite.get_mon1_leveltime);
 		mon1[i].leveltime = sqlite.get_mon1_leveltime;
-		
-		Log.i("get_mon1_birthtime",""+sqlite.get_mon1_birthtime);
 		mon1[i].birthtime = sqlite.get_mon1_birthtime;
 ///////////////////////////////////////////////////////////////////
-		Log.i("get_mon2_shurui",""+sqlite.get_mon2_shurui);
 		mon2[i].shurui = sqlite.get_mon2_shurui;
-		
-		Log.i("get_mon2_level",""+sqlite.get_mon2_level);
 		mon2[i].Level = sqlite.get_mon2_level;
-		
-		Log.i("get_mon2_state",""+sqlite.get_mon2_state);
 		mon2[i].State = sqlite.get_mon2_state;
-		
-		Log.i("get_mon2_live",""+sqlite.get_mon2_live);
 		mon2[i].tfcheck = sqlite.get_mon2_live[i];
-		
-		Log.i("get_mon2_leveltime",""+sqlite.get_mon2_leveltime);
 		mon2[i].leveltime = sqlite.get_mon2_leveltime;
-		
-		Log.i("get_mon2_birthtime",""+sqlite.get_mon2_birthtime);
 		mon2[i].birthtime = sqlite.get_mon2_birthtime;
 /////////////////////////////////////////////////////////////////////
-		Log.i("get_mon3_shurui",""+sqlite.get_mon3_shurui);
 		mon3[i].shurui = sqlite.get_mon3_shurui;
-		
-		Log.i("get_mon3_level",""+sqlite.get_mon3_level);
 		mon3[i].Level = sqlite.get_mon3_level;
-		
-		Log.i("get_mon3_state",""+sqlite.get_mon3_state);
 		mon3[i].State = sqlite.get_mon3_state;
-		
-		Log.i("get_mon3_live",""+sqlite.get_mon3_live);
 		mon3[i].tfcheck = sqlite.get_mon3_live[i];
-		
-		Log.i("get_mon3_leveltime",""+sqlite.get_mon3_leveltime);
 		mon3[i].leveltime = sqlite.get_mon3_leveltime;
-
-		Log.i("get_mon3_birthtime",""+sqlite.get_mon3_birthtime);
 		mon3[i].birthtime = sqlite.get_mon3_birthtime;
 /////////////////////////////////////////////////////////////////////
-		Log.i("get_mon4_shurui",""+sqlite.get_mon4_shurui);
 		mon4[i].shurui = sqlite.get_mon4_shurui;
-		
-		Log.i("get_mon4_level",""+sqlite.get_mon4_level);
 		mon4[i].Level = sqlite.get_mon4_level;
-		
-		Log.i("get_mon4_state",""+sqlite.get_mon4_state);
 		mon4[i].State = sqlite.get_mon4_state;
-		
-		Log.i("get_mon4_live",""+sqlite.get_mon4_live);
 		mon4[i].tfcheck = sqlite.get_mon4_live[i];
-		
-		Log.i("get_mon4_leveltime",""+sqlite.get_mon4_leveltime);
 		mon4[i].leveltime = sqlite.get_mon4_leveltime;
-		
-		Log.i("get_mon4_birthtime",""+sqlite.get_mon4_birthtime);
 		mon4[i].birthtime = sqlite.get_mon4_birthtime;
 /////////////////////////////////////////////////////////////////////			
-		if(mon1[i].tfcheck==1)
-		{
-			Log.i("321tfcheck1",""+mon1[i].tfcheck);
+		if(mon1[i].tfcheck==1) {
 			mon1[i].itLive=true;
 		}
-		else if(mon1[i].tfcheck==0)
-		{
-			Log.i("123tfcheck1",""+mon1[i].tfcheck);
+		else if(mon1[i].tfcheck==0) {
 			mon1[i].itLive=false;
 		}
 		
-		if(mon2[i].tfcheck==1)
-		{Log.i("tfcheck2",""+mon2[i].tfcheck);
+		if(mon2[i].tfcheck==1) {
 			mon2[i].itLive=true;
 		}
-		else if(mon2[i].tfcheck==0)
-		{Log.i("tfcheck2",""+mon2[i].tfcheck);
+		else if(mon2[i].tfcheck==0) {
 			mon2[i].itLive=false;
 		}
 		
-		if(mon3[i].tfcheck==1)
-		{Log.i("tfcheck3",""+mon3[i].tfcheck);
+		if(mon3[i].tfcheck==1) {
 			mon3[i].itLive=true;
 		}
-		else if(mon3[i].tfcheck==0)
-		{Log.i("tfcheck3",""+mon3[i].tfcheck);
+		else if(mon3[i].tfcheck==0) {
 			mon3[i].itLive=false;
 		}
 		
-		if(mon4[i].tfcheck==1)
-		{Log.i("tfcheck4",""+mon4[i].tfcheck);
+		if(mon4[i].tfcheck==1) {
 			mon4[i].itLive=true;
 		}
-		else if(mon4[i].tfcheck==0)
-		{Log.i("tfcheck4",""+mon4[i].tfcheck);
+		else if(mon4[i].tfcheck==0) {
 			mon4[i].itLive=false;
 		}
 	}
@@ -331,8 +288,7 @@ public class MyGameView extends SurfaceView implements Callback {
 	}
 
 	public void StopGame() {
-//////////////������ ���̽� ////////////////////////
-	Log.i("stopgold", "" + sqlite.get_gold);
+//////////////現状のセーブ ////////////////////////
 	sqlite.goldsave(gold);
 	sqlite.map_save(farmlevel);
 	sqlite.farm_save(State);
@@ -395,8 +351,6 @@ public class MyGameView extends SurfaceView implements Callback {
 			sqlite.mon1level_save(mon1[i].Level);
 			Log.i("state1",""+mon1[i].State);
 			sqlite.mon1state_save(mon1[i].State);
-			//Log.i("live1",""+mon1[i].tfcheck);
-			
 			Log.i("leveltime1",""+mon1[i].leveltime);
 			sqlite.mon1leveltime_save(mon1[i].leveltime);
 			Log.i("birthtime1",""+mon1[i].birthtime);
@@ -410,8 +364,6 @@ public class MyGameView extends SurfaceView implements Callback {
 			sqlite.mon2level_save(mon2[i].Level);
 			Log.i("state2",""+mon2[i].State);
 			sqlite.mon2state_save(mon2[i].State);
-			//Log.i("live2",""+mon2[i].tfcheck);
-			//sqlite.mon2live_save(mon2[i].tfcheck);
 			Log.i("leveltime2",""+mon2[i].leveltime);
 			sqlite.mon2leveltime_save(mon2[i].leveltime);
 			Log.i("birthtime2",""+mon2[i].birthtime);
@@ -425,8 +377,6 @@ public class MyGameView extends SurfaceView implements Callback {
 			sqlite.mon3level_save(mon3[i].Level);
 			Log.i("state3",""+mon3[i].State);
 			sqlite.mon3state_save(mon3[i].State);
-			//Log.i("live3",""+mon3[i].tfcheck);
-			//sqlite.mon3live_save(mon3[i].tfcheck);
 			Log.i("leveltime3",""+mon3[i].leveltime);
 			sqlite.mon3leveltime_save(mon3[i].leveltime);
 			Log.i("birthtime3",""+mon3[i].birthtime);
@@ -440,8 +390,6 @@ public class MyGameView extends SurfaceView implements Callback {
 			sqlite.mon4level_save(mon4[i].Level);
 			Log.i("state4",""+mon4[i].State);
 			sqlite.mon4state_save(mon4[i].State);
-			//Log.i("live4",""+mon4[i].tfcheck);
-			//sqlite.mon4live_save(mon4[i].tfcheck);
 			Log.i("leveltime4",""+mon4[i].leveltime);
 			sqlite.mon4leveltime_save(mon4[i].leveltime);
 			Log.i("birthtime4",""+mon4[i].birthtime);
@@ -665,104 +613,59 @@ public class MyGameView extends SurfaceView implements Callback {
 													18 + (30 * 1), null);
 									}
 								} else if (farmlevel == 3) {
-									canvas.drawBitmap(sample1.now[0][n], 100,
-											340, null);
+									canvas.drawBitmap(sample1.now[0][n], 100, 340, null);
 									canvas.drawBitmap(jouhou[0], 105,400,null);
-
-									canvas.drawBitmap(sample2.now[0][n], 70,
-											445, null);
+									canvas.drawBitmap(sample2.now[0][n], 70, 445, null);
 									canvas.drawBitmap(jouhou[1], 75,505,null);
-
-									canvas.drawBitmap(sample3.now[0][n], 155,
-											555, null);
+									canvas.drawBitmap(sample3.now[0][n], 155, 555, null);
 									canvas.drawBitmap(jouhou[2], 160,615,null);
-
-									canvas.drawBitmap(Gauge[1], 350 - 118, 15,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 118, 45,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 118, 75,
-											null);
-									canvas.drawBitmap(Gauge[0], 350 - 118, 105,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 15,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 45,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 75,
-											null);
-									canvas.drawBitmap(Gauge[0], 350 - 27, 105,
-											null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 15, null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 45, null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 75, null);
+									canvas.drawBitmap(Gauge[0], 350 - 118, 105, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 15, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 45, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 75, null);
+									canvas.drawBitmap(Gauge[0], 350 - 27, 105, null);
 									for (int j = 0; j < 9; j++) {
 										if (mon1[j].itLive == true)
-											canvas.drawBitmap(po[0],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 0), null);
+											canvas.drawBitmap(po[0], 355 + (23 * (j)) - 118, 18 + (30 * 0), null);
 										if (mon2[j].itLive == true)
-											canvas.drawBitmap(po[1],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 1), null);
+											canvas.drawBitmap(po[1], 355 + (23 * (j)) - 118, 18 + (30 * 1), null);
 										if (mon3[j].itLive == true)
-											canvas.drawBitmap(po[2],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 2), null);
+											canvas.drawBitmap(po[2], 355 + (23 * (j)) - 118, 18 + (30 * 2), null);
 									}
 								} else if (farmlevel == 4) {
-									canvas.drawBitmap(sample1.now[0][n], 100,
-											340, null);
+									canvas.drawBitmap(sample1.now[0][n], 100, 340, null);
 									canvas.drawBitmap(jouhou[0], 105,400,null);
-
-									canvas.drawBitmap(sample2.now[0][n], 70,
-											445, null);
+									canvas.drawBitmap(sample2.now[0][n], 70, 445, null);
 									canvas.drawBitmap(jouhou[1], 75,505,null);
-
-									canvas.drawBitmap(sample3.now[0][n], 155,
-											555, null);
+									canvas.drawBitmap(sample3.now[0][n], 155, 555, null);
 									canvas.drawBitmap(jouhou[2], 160,615,null);
-
-									canvas.drawBitmap(sample4.now[0][n], 212,
-											675, null);
+									canvas.drawBitmap(sample4.now[0][n], 212, 675, null);
 									canvas.drawBitmap(jouhou[3], 217,735,null);
-
-									canvas.drawBitmap(Gauge[1], 350 - 118, 15,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 118, 45,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 118, 75,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 118, 105,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 15,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 45,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 75,
-											null);
-									canvas.drawBitmap(Gauge[1], 350 - 27, 105,
-											null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 15, null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 45, null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 75, null);
+									canvas.drawBitmap(Gauge[1], 350 - 118, 105, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 15, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 45, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 75, null);
+									canvas.drawBitmap(Gauge[1], 350 - 27, 105, null);
 									for (int j = 0; j < 9; j++) {
 										if (mon1[j].itLive == true)
-											canvas.drawBitmap(po[0],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 0), null);
+											canvas.drawBitmap(po[0], 355 + (23 * (j)) - 118, 18 + (30 * 0), null);
 										if (mon2[j].itLive == true)
-											canvas.drawBitmap(po[1],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 1), null);
+											canvas.drawBitmap(po[1], 355 + (23 * (j)) - 118, 18 + (30 * 1), null);
 										if (mon3[j].itLive == true)
-											canvas.drawBitmap(po[2],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 2), null);
+											canvas.drawBitmap(po[2], 355 + (23 * (j)) - 118, 18 + (30 * 2), null);
 										if (mon4[j].itLive == true)
-											canvas.drawBitmap(po[3],
-													355 + (23 * (j)) - 118,
-													18 + (30 * 3), null);
+											canvas.drawBitmap(po[3], 355 + (23 * (j)) - 118, 18 + (30 * 3), null);
 									}
 								}
 								for (int i = 0; i < 9; i++) {
 									cr.m_instance.CheckPocketmon(i);
 								}
-
 							}
 
 							
@@ -780,17 +683,18 @@ public class MyGameView extends SurfaceView implements Callback {
 						if (mGameCnt == 1000000)
 							mGameCnt = 0;
 						if (mGameCnt % 25 == 0) {
-							if (lifeCnt != life.length - 1)
+							if (lifeCnt != life.length - 1) {
 								lifeCnt++;
-							else
+							} else {
 								lifeCnt = 0;
+							}
 						}
-
 
 					}
 				} finally {
-					if (canvas != null)
+					if (canvas != null) {
 						mHolder.unlockCanvasAndPost(canvas);
+					}
 				}
 				synchronized (this) {
 					if (isWait)
@@ -847,7 +751,7 @@ public class MyGameView extends SurfaceView implements Callback {
 
 		}
 
-		// Gold �ڸ��� ���ϱ�
+		// Gold の設定
 		public void Score(int score) {
 			score = gold;
 			dived = 100000;
@@ -893,16 +797,25 @@ public class MyGameView extends SurfaceView implements Callback {
 				}
 			}
 			if (GameState.GameState_NowState == GameState.GameState_Logo) {
+
+				if(!logoloaded) {
+					linit.m_instance.logodraw(mContext, realwidth, realheight);
+					logoloaded = true;
+				}
 				canvas.drawColor(Color.BLACK);
 				canvas.drawARGB(logo_alpha, 255, 255, 255);
 
 				if (logo_alpha_ok == true) {
 					canvas.drawBitmap(logo, 0, 0, null);
+					//ロゴを描く
 					canvas.drawARGB(logo_alpha2, 255, 255, 255);
 				}
+
 			}
 
 			if ((GameState.GameState_NowState == GameState.GameState_MenuState)) {
+				//ロゴの後メニュー画面が出る
+				logo.recycle();
 				if(s_on==true)
 					GunBg.BackSound[3].start();
 				canvas.drawBitmap(menu, 0, 0, null);
@@ -915,44 +828,26 @@ public class MyGameView extends SurfaceView implements Callback {
 				canvas.drawText("��ġ��ǥ x:" + x1 + "y:" + y1, 30, 100, p);
 				canvas.drawText("remaintime : "+remaintime ,30, 150, p);
 				remaintime -= level;
-				// ������ �Ѹ���
+				//lifeをチェック
 				for (int i = 0; i < lifecheck; i++) {
 					canvas.drawBitmap(life[lifeCnt], 120 + i * 50, 25, null);
 				}
 
 				// -------------------------------
-				// �����Ѹ���
+				// 点数を書く
 				for (int i = 0; i < 1; i++) {
 					if (drawcheck == true) {
-						canvas.drawBitmap(
-								number,
-								new Rect(level * 12, 0, level * 12
-										+ number.getWidth() / 10, 22),
-										new Rect(
-												90 + (i + 1) * (number.getWidth() / 10),
-												740,
-												(90 + (i + 1)
-														* (number.getWidth() / 10) + number
-														.getWidth() / 10), 740 + 22),
-														null);
-
+						canvas.drawBitmap(number,
+								new Rect(level * 12, 0, level * 12 + number.getWidth() / 10, 22),
+								new Rect(90 + (i + 1) * (number.getWidth() / 10), 740, (90 + (i + 1) * (number.getWidth() / 10) + number.getWidth() / 10), 740 + 22), null);
 					}
 				}
 				// ���Ѹ���
 				for (int i = 0; i < goldiv.length; i++) {
 					if (drawcheck == true) {
-						canvas.drawBitmap(
-								number,
-								new Rect(goldiv[i] * 12, 0, goldiv[i] * 12
-										+ number.getWidth() / 10, 22),
-										new Rect(
-												230 + (i + 1)
-												* (number.getWidth() / 10),
-												740,
-												(230 + (i + 1)
-														* (number.getWidth() / 10) + number
-														.getWidth() / 10), 740 + 22),
-														null);
+						canvas.drawBitmap(number,
+								new Rect(goldiv[i] * 12, 0, goldiv[i] * 12 + number.getWidth() / 10, 22),
+								new Rect(230 + (i + 1) * (number.getWidth() / 10), 740, (230 + (i + 1) * (number.getWidth() / 10) + number.getWidth() / 10), 740 + 22), null);
 					}
 				}
 
@@ -981,10 +876,7 @@ public class MyGameView extends SurfaceView implements Callback {
 				}
 				// ���� �Ѹ���
 				for (int i = 0; i < mGold.size(); i++) {
-					if (mGold.get(i).IsLive) {
-						p2.setAlpha(mGold.get(i).getAlpha());
-						canvas.drawBitmap(mgold[0], mGold.get(i).getX(), mGold
-								.get(i).getY(), p2);
+					if (mGold.get(i).IsLive) {p2.setAlpha(mGold.get(i).getAlpha());canvas.drawBitmap(mgold[0], mGold.get(i).getX(), mGold.get(i).getY(), p2);
 					}
 				}
 
@@ -1101,7 +993,7 @@ public class MyGameView extends SurfaceView implements Callback {
 			}
 		}
 	}
-	// ================��ġ�̺�Ʈ=================
+	// ================touch Event=================
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {

@@ -2,9 +2,11 @@ package com.android.mini;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.view.Display;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -15,7 +17,7 @@ public class GunBg extends Activity {
 	public static GunBg m_instance;
 	static boolean m_first;
 	public Context con;
-	MyGameView mGameView;
+	//MyGameView mGameView;
 	sqlite sqlv;
 	
     @Override
@@ -28,7 +30,11 @@ public class GunBg extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
         		WindowManager.LayoutParams.FLAG_FULLSCREEN);       
         m_instance= this;
-        mGameView = new MyGameView(this);
+
+        Display display = getWindowManager().getDefaultDisplay();
+        int Width = display.getWidth();
+        int Height = display.getHeight();
+        MyGameView mGameView = new MyGameView(this, Width, Height);
         setContentView(mGameView);
         BackSound[0]= MediaPlayer.create(this, R.raw.space);
         BackSound[0].setVolume(1, 1);

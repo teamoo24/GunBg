@@ -1,4 +1,4 @@
-#Sat Apr 29 10:56:35 JST 2017
+#Sun Apr 30 14:53:00 JST 2017
 base.0=C\:\\Users\\USER\\AndroidStudioProjects\\GunBg\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b42b180de371be71348b37a19a692d1c2128a600
 renamed.1=classes.dex
 renamed.0=classes2.dex

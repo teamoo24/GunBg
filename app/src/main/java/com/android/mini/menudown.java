@@ -42,16 +42,15 @@ public class menudown {
 		if (MyGameView.m_instance.poketY < 650) {
 			if (MyGameView.m_instance.poketX < 240) {
 				if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX && MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w
-						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY && MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// ////¸ÔÀÌÁÖ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY && MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {
 					kr.m_instance.meatmenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 2 && MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ä¡·áÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					kr.m_instance.medichinemenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w * 2
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 3 && MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ã»¼ÒÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					kr.m_instance.ddongmenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w * 3
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 4 && MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY
@@ -59,8 +58,8 @@ public class menudown {
 					kr.m_instance.sellmenu();
 				}
 				else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX && MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w
-						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY+w && MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) {// ////¸ÔÀÌÁÖ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY+w && MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) {// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
+					// ï¿½Þ´ï¿½
 						{
 							for(int i=0;i<9;i++){
 								Log.e("asdf", "asdf");
@@ -78,7 +77,7 @@ public class menudown {
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 2 
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY+w
 						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) 
-					{// Ä¡·áÇÏ±â ¸Þ´º
+					{// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 						for(int i=0;i<9;i++){
 							if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.medic1Clear();
@@ -92,7 +91,7 @@ public class menudown {
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w * 2
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 3 
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY+w
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) {// Ã»¼ÒÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
@@ -121,19 +120,19 @@ public class menudown {
 				} else {
 					kr.m_instance.close();
 				}
-			}// px < (°¡·Î/2)º¸´Ù ÀÛÀ»¶§
+			}// px < (ï¿½ï¿½ï¿½ï¿½/2)ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			else {
 				if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 4 && MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY && MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {
-					// ////¸ÔÀÌÁÖ±â¸Þ´º
+					// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Þ´ï¿½
 					kr.m_instance.meatmenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 2 && MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ä¡·áÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					kr.m_instance.medichinemenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 2
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w && MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ã»¼ÒÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					kr.m_instance.ddongmenu();
 				} 
 				else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w && MyGameView.m_instance.x1 < MyGameView.m_instance.poketX
@@ -145,7 +144,7 @@ public class menudown {
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY +w 
 						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) {
-					// ////¸ÔÀÌÁÖ±â¸Þ´º
+					// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.food1Clear();
@@ -160,7 +159,7 @@ public class menudown {
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 2
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY +w
 						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) 
-				{// Ä¡·áÇÏ±â ¸Þ´º
+				{// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.medic1Clear();
@@ -175,7 +174,7 @@ public class menudown {
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w 
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY +w
 						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY + w*2) 
-				{// Ã»¼ÒÇÏ±â ¸Þ´º
+				{// Ã»ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 
 						for(int i=0;i<9;i++){
 								if(MyGameView.m_instance.mon1[i].isMenu == true)
@@ -206,28 +205,28 @@ public class menudown {
 				else {
 					kr.m_instance.close();
 				}
-			}// px < (°¡·Î/2)
-		}// py´Â 650º¸´Ù ÀÛÀ»¶§
+			}// px < (ï¿½ï¿½ï¿½ï¿½/2)
+		}// pyï¿½ï¿½ 650ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		else {
-			// py´Â 650º¸´Ù Å¬¶§
+			// pyï¿½ï¿½ 650ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½
 			if (MyGameView.m_instance.poketX < 240) {
 				if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX 
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY - w*2 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// ////¸ÔÀÌÁÖ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
+					// ï¿½Þ´ï¿½
 					kr.m_instance.meatmenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 2
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY - w*2
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ä¡·áÇÏ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½
+					// ï¿½Þ´ï¿½
 					kr.m_instance.medichinemenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w * 2
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 3
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY - w*2 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ã»¼ÒÇÏ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½
+					// ï¿½Þ´ï¿½
 					kr.m_instance.ddongmenu();
 		
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w * 3
@@ -241,8 +240,8 @@ public class menudown {
 				else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX 
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY-w 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// ////¸ÔÀÌÁÖ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
+					// ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.food1Clear();
@@ -257,8 +256,8 @@ public class menudown {
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 2
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY -w 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ä¡·áÇÏ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½
+					// ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.medic1Clear();
@@ -273,8 +272,8 @@ public class menudown {
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX + w * 2
 						&& MyGameView.m_instance.x1 <= MyGameView.m_instance.poketX + w * 3
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY -w 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ã»¼ÒÇÏ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½
+					// ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.ddong1Clear();
@@ -304,24 +303,24 @@ public class menudown {
 				else {
 					kr.m_instance.close();
 				}
-			}// px < (°¡·Î/2)º¸´Ù ÀÛÀ»¶§
+			}// px < (ï¿½ï¿½ï¿½ï¿½/2)ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			else {
 				if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 4 
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY - w*2 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// ////¸ÔÀÌÁÖ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
+					// ï¿½Þ´ï¿½
 					kr.m_instance.meatmenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 2
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY - w*2
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ä¡·áÇÏ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½
+					// ï¿½Þ´ï¿½
 					kr.m_instance.medichinemenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 2
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w 
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY - w*2
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ã»¼ÒÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY-w) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					kr.m_instance.ddongmenu();
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX
@@ -332,8 +331,8 @@ public class menudown {
 				if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 4 
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY-w 
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// ////¸ÔÀÌÁÖ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// ////ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
+					// ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.food1Clear();
@@ -347,8 +346,8 @@ public class menudown {
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 3
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w * 2
 						&& MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY-w
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ä¡·áÇÏ±â
-					// ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ä¡ï¿½ï¿½ï¿½Ï±ï¿½
+					// ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.medic1Clear();
@@ -363,7 +362,7 @@ public class menudown {
 				} else if (MyGameView.m_instance.x1 >= MyGameView.m_instance.poketX - w * 2
 						&& MyGameView.m_instance.x1 < MyGameView.m_instance.poketX - w &&
 						MyGameView.m_instance.y1 >= MyGameView.m_instance.poketY-w
-						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ã»¼ÒÇÏ±â ¸Þ´º
+						&& MyGameView.m_instance.y1 < MyGameView.m_instance.poketY) {// Ã»ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Þ´ï¿½
 					for(int i=0;i<9;i++){
 						if(MyGameView.m_instance.mon1[i].isMenu == true)
 							cp.m_instance.ddong1Clear();
@@ -392,6 +391,6 @@ public class menudown {
 					kr.m_instance.close();
 				}
 			}
-		}// py´Â 650º¸´Ù Å¬¶©
+		}// pyï¿½ï¿½ 650ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½
 	}
 }
